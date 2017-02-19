@@ -1,0 +1,374 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="author" content="http://www.auricletechnologies.com/">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<title>IJAP - Editorialboard</title>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<link rel="icon" type="image/png" href="http://www.internationaljournalisar.org/images/myicon.jpg" />
+<meta name="description" content="ISAR - International Scientific and Research Journals Journals" />
+<meta name="keywords" content="ISAR - International Scientific and Research Journals Journals" />
+<link rel="stylesheet" href="http://www.internationaljournalisar.org/css/zerogrid.css">
+<link rel="stylesheet" href="http://www.internationaljournalisar.org/css/style.css">
+<link rel="stylesheet" href="http://www.internationaljournalisar.org/css/responsive.css">
+<link rel="stylesheet" href="http://www.internationaljournalisar.org/css/sitePopUp.css">
+
+<!--menu-->
+<link rel="stylesheet" href="http://www.internationaljournalisar.org/css/ddsmoothmenu.css">
+<script type="text/javascript" src="http://www.internationaljournalisar.org/js/jquery.min.js"></script>
+<script type="text/javascript" src="http://www.internationaljournalisar.org/js/ddsmoothmenu.js"></script>
+</head>
+<body>
+
+<script type="text/javascript">
+$(document).ready(function(){
+	$('#dismiss').live('click', function(){
+		$('.output').fadeOut(0);
+	});
+	$('#admorebtn').live('click', function(){
+		$('#morefieldwrap').append('<p><input type="file" name="file[]" multiple="multiple" autocomplete="off" required="required" class="field filefield" /><input type="button" value="Remove" id="rmmorebtn" class="mrbtn" /></p>');
+	});
+	$('#rmmorebtn').live('click', function(){
+		$(this).parent('p').remove();
+	});
+	$('.downloadLink').live('click', function(){
+		var id = $(this).attr('id');
+		$.ajax({
+			type:"POST",
+			url:"http://www.internationaljournalisar.org/IMAGE/",
+			data:"cmd=downloads&id=" + id,
+			cache:false,
+			success: function(){}
+		});
+	});
+	$('#closeSitePopUp').live('click', function(){
+		$('.sitePopUp').fadeOut(0);
+	});
+});
+</script>
+
+
+<script type="text/javascript">
+try {
+} catch(err) {}</script>
+
+<header>
+   <div class="wrap-header zerogrid" style="position:relative;">
+     <img src="http://www.internationaljournalisar.org/images/myicon.jpg" alt="ISAR" width="185" height="200" /><br>
+
+<div class="logocontent" style="left:200px; top:55px; position:absolute; font-size:35px; color:#086A87; text-align:center;">ISAR - International Scientific and Research Journals</div>
+
+</div>
+<!--<div class="logocontent" style="left:350px; top:85px; position:absolute; font-size:25px; color:#000000; text-align:center;"><p style="left:20px"; style="font-size:18px;font-size:5px; color:#18b3e4; margin:8px;">International Journals </p>
+</div>-->
+<div class="logocontent" style="left:395px; top:90px; position:absolute; font-size:18px; color:#000000; text-align:center;"><p style="left:20px"; style="font-size:18px;font-size:5px; color:#18b3e4; margin:8px;">Scholary Peer Reviewed Research Publishing Journals </p></div>
+
+</header>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-71638505-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+<div class="clear"></div>
+<div class="zerogrid">
+  <div >
+
+      <ul id="css3menu1" class="topmenu">
+        <li class="topfirst"><a href="http://www.internationaljournalisar.org" style="width:110px;height:8px;line-height:9px; text-align:center;">Welcome</a></li>
+       <li class="topmenu"><a  style="width:120px;height:8px;line-height:9px; text-align:center;">About ISAR</a>
+	             <ul>
+	    <li><a href="http://www.internationaljournalisar.org/About.html" style="width:110px;height:8px;line-height:9px; text-align:left;">About us</a></li>
+
+	               <li><a href="http://www.internationaljournalisar.org/Indexing.html" style="width:100px;height:8px;line-height:9px; text-align:left;">ISAR Indexing</a></li>
+	             </ul>
+        </li>
+        <li class="topmenu"><a href="http://www.internationaljournalisar.org/callforpaper.html" style="width:120px;height:8px;line-height:9px; text-align:center;">Call For Paper</a> </li>
+        <li class="topmenu"><a href="http://www.internationaljournalisar.org/Journals.html" style="width:120px;height:8px;line-height:9px; text-align:center;">ISAR Journals</a></li>
+        <li class="topmenu"><a  style="width:120px;height:8px;line-height:9px; text-align:center;">For Author</a>
+          <ul>
+                <li class="subfirst"><a href="http://www.internationaljournalisar.org/publication-guidelines.html" style="width:135px;height:8px;line-height:9px; text-align:left;">Publication Guidelines</a></li>
+           <li><a href="http://www.internationaljournalisar.org/PeerReview.html" style="width:100px;height:8px;line-height:9px; text-align:left;">Peer Review</a></li>
+            <li><a href="http://www.internationaljournalisar.org/Publication-Fee.html"  style="width:100px;height:8px;line-height:19px; text-align:left;">Processing Fee</a></li>
+             <li><a href="http://www.internationaljournalisar.org/Submit-Paper.html" style="width:100px;height:8px;line-height:9px; text-align:left;">Submit Your Paper</a></li>
+          </ul>
+        </li>
+
+        <li class="topmenu"><a href="http://www.internationaljournalisar.org/faq.html" style="width:100px;height:8px;line-height:9px; text-align:center;">FAQs</a></li>
+        <li class="topmenu"><a href="http://www.internationaljournalisar.org/Contact.html" style="width:110px;height:8px;line-height:9px; text-align:center;">Contact Us</a></li>
+              </ul>
+    </div>
+</div><div class="clear"></div>
+<section id="content">
+  <div class="wrap-content zerogrid">
+
+     <marquee direction="left" scrollamount="3" scrolldelay="3">
+    <a name="up" id="up"></a><strong><font color="#000000">Anybody can submit their paper by mailing at IJAPsubmit@gmail.com</font></strong>
+</marquee>
+
+
+	      <div class="clear"></div>
+	  <div id="sidebar" class="right col-1-4">
+  <div class="wrap-col">
+
+<div class="box">
+      <div class="heading">
+        <h2>ISAR - Menu</h2>
+      </div>
+      <div class="content" style="">
+	  					<ul>
+<li><a href="http://www.internationaljournalisar.org/IJAP/index.html" title="Home">Home</a></li>
+<li><a href="http://www.internationaljournalisar.org/IJAP/CurrentIssues.html" title="CurrentIssues">CurrentIssues</a></li>
+<li><a href="http://www.internationaljournalisar.org/IJAP/Archives.html" title="Archives">Archives</a></li>
+<!--<li><a href="http://www.internationaljournalisar.org/callforpaper.html" title="Call For Paper">Call For Paper</a></li>-->
+<li><a href="http://www.internationaljournalisar.org/IJAP/Topics.html" title="Topics">Topics</a></li>
+<!--<li><a href="http://www.internationaljournalisar.org/Indexing.html" title="Indexing">Indexing</a></li>-->
+<li><a href="http://www.internationaljournalisar.org/IJAP/Editorialboard.html" title="Editorial Board">Editorial Board</a></li>
+<li><a href="http://www.internationaljournalisar.org/IJAP/images/IJAP-PaperFormat.docx" title="Paper Template">Paper Template</a></li>
+<li><a href="http://www.internationaljournalisar.org/IJAP/images/IJAP-CopyrightForm.docx" title=" Copy Right Form">Copy Right Form</a></li>
+ </ul>
+
+
+
+      </div>
+    </div>
+
+
+<div class="box">
+      <div class="heading">
+        <h2>ISAR - Journals</h2>
+      </div>
+      <div class="content" style="">
+<ul>
+<li><a href="http://www.ijretjournal.org/" target="blank" title="ISAR - IJRET">ISAR - International Journal of Research in Engineering Technology</a></li>
+<li><a href="http://www.ijcsejournal.org/" target="blank"  title="ISAR - IJCSE">ISAR - International Journal of Computer science engineering Techniques</a></li>
+<li><a href="http://www.internationaljournalisar.org/IJMCT/index.html" title="ISAR - IJMCT">ISAR International Journal of Mathematics and Computing Techniques</a></li>
+<li><a href="http://www.internationaljournalisar.org/IJPT/index.html" title="ISAR - IJPT"> ISAR International Journal of P2P Network and Techniques</a></li>
+<li><a href="http://www.internationaljournalisar.org/IJECE/index.html" title="ISAR - IJECE">ISAR International Journal of Electronics and Communication Ethics</a></li>
+<li><a href="http://www.internationaljournalisar.org/IJEEE/index.html" title="ISAR - IJEEE">ISAR International Journal of Electrical and Electronic Ethics</a></li>
+<li><a href="http://www.internationaljournalisar.org/IJAP/index.html" title="ISAR - IJAP">ISAR International Journal of Advances in Physics</a></li>
+<li><a href="http://www.internationaljournalisar.org/IJAC/index.html" title="ISAR - IJAC">ISAR International Journal of Advances in chemistry</a></li>
+  </div>
+    </div>
+
+
+
+			    <div class="box">
+      <div class="heading">
+        <h2>ISAR - News</h2>
+      </div>
+<marquee scrollamount="2" direction="up" onmouseover="this.stop()"  onmouseout="this.start()" loop="true" width="100%">
+
+          <center> <font color="#086A87">
+					ISAR provides e-certificate of publication to authors.</font>
+					</center><br>
+
+					<center> <font color="#086A87">
+					<a href="http://www.internationaljournalisar.org/callforpaper.html">Call For Paper</a> for Cureent Issues.</font>
+					</center><br>
+
+					<center> <font color="#086A87">
+					 Inviting for Join As Reviewers.</font>
+					</center><br>
+
+                                        <center> <font color="#086A87">
+					 You can submit research article to <a href="http://www.internationaljournalisar.org/callforpaper.html"> respective journal mail id</a>.</font>
+					</center><br>
+
+				</marquee>
+
+
+    </div>
+
+
+
+
+  <div class="box">
+      <div class="heading">
+        <h2>Online Visiters</h2>
+      </div>
+		 <br><center><script type="text/javascript" src="http://widget.supercounters.com/flag.js"></script><script type="text/javascript">sc_flag(1160510,"FFFFFF","000000","cccccc",2,10,0,0)</script><br><noscript><a href="http://www.supercounters.com/">Flag Counter</a></noscript><br>
+
+
+			  </center>
+
+    </div>
+  </div>
+</div>
+      <!--=========================================contact query=====================================-->
+      <div id="main-content" class="col-3-6">
+        <div class="wrap-col">
+
+	          <article>
+            <div class="heading">
+              <center><h2>ISAR International Journal of Advances in Physics</h2></center>
+      </div>
+<h2><font color="red">ISAR IJAP  Editorialboard :-</font></h2>
+
+            <div class="content" style="text-align:justify;"><br>
+              <p>
+
+
+<h1><li><a>Prof (Dr.) BRAHMAJIRAO VASANTHARAO </a></li></h1>
+M.Sc., Ph.D., F.Saest. F.A.S.I., M.U.S.I., M.I.A.P.T., M.I.S.T.E.,<br>
+Visiting professor and Director, Centre for Nanoscience and Technology <br>
+Gayatri Vidya Parishad college of Engineering (Autonomous), <br>
+Affiliated to JNTUK ( Kakinada, A.P. )<br>
+Madhurawada, Visakhapatnam-530048<br>
+<h1><a>Land line:: B.S.N.L.:040 23156071, Cell: 09347455222.</a></h1>
+<h1><a> Email : profvrbr@gmail.com, prof.vrbr.160845@gmail.com, profvrbr@gvpce.ac.in</a></h1><br>
+
+<h1><li><a>Prof (Dr.) A. DINESH KUMAR </a></li></h1>
+M.Sc.,M.Phil.,B.Ed.,D.T.Ed.,PGDCA.,(Ph.D)., <br>
+Head & Assistant Professor <br>
+Department of Science & Humanities, Dhanalakshmi Srinivasan Engineering College,  <br>
+Perambalur,<br>
+Madhurawada, Visakhapatnam-530048<br>
+<h1><a>Contact :9486345452</a></h1>
+<h1><a> Email : dineshkumarmat@gmail.com </a></h1><br>
+
+
+<h1><li><a>Prof (Dr.) Guptha Singh </a></li></h1>
+M.Sc.,M.Phil.(Ph.D)., <br>
+Head & Assistant Professor <br>
+Council of Scientific and Industrial Research (CSIR Madras) <br/>
+ Tharamani, Chennai,   <br>
+Tamil Nadu 600113<br>
+<h1><a>Contact :044 2254 2246</a></h1>
+<h1><a> Email : gupthasingh@gmail.com </a></h1><br>
+
+<h1><li><a>Prof M.C.Rao </a></li></h1>
+B.Sc M.Sc. (Materials Science),M.Phil.(Physics), <br>
+Doctor Babasaheb Ambedkar Marathwada University<br>
+University Campus, Near Soneri Mahal, <br/>
+ Jaisingpura, Aurangabad,   <br>
+Maharashtra 431004 <br>
+<h1><a>Contact :0240 240 3399</a></h1>
+<h1><a> Email : raobabasahep.102@gmail.com </a></h1><br>
+
+<h1><li><a>Prof.S.C. Mehrotra </a></li></h1>
+Dept. of Physics  <br>
+Lalit Narayan Mithila University<br>
+Kameshwaranagar, Darbhanga, <br/>
+  Bihar,India, 846004  <br>
+<h1><a>Contact :06272 222 463</a></h1>
+<h1><a> Email : mehrotrasc.1972@gmail.com </a></h1><br>
+
+<h1><li><a>Prof.Dr.S.Kishore Reddy </a></li></h1>
+Dept. of Physics  <br>
+Regional Institute of Education<br>
+  Ajmer-India, 305004  <br>
+<h1><a>Contact :0145-2990140</a></h1>
+<h1><a> Email : reddykishore@gmail.com </a></h1><br>
+
+
+<h1><li><a>Prof.S.K. Narayandass </a></li></h1>
+Asso.Prof,Department of Physics <br>
+School of Physics <br>
+  Madurai Kamaraj University  <br>
+  Palkalai Nagar, Madurai,<br/>
+  Tamil Nadu 625021 <br>
+<h1><a>Contact :9003304133</a></h1>
+<h1><a> Email : k.narayandep2010@gmail.com </a></h1><br>
+
+<h1><li><a>Prof.Dr. Ajit  Senapati </a></li></h1>
+Department of Physics <br>
+GIET School of Pharmacy<br>
+  Andhra Pradesh  <br>
+India- 533294 <br>
+<h1><a>Contact :0883 248 4444</a></h1>
+<h1><a> Email : Senapatigiet@gmail.com </a></h1><br>
+
+
+<!--<br><br><h2><font color="red">IJAP-Executive Editors</font></h2>
+
+
+				<h1><li><a>G Mandal </a></li></h1>
+				Indian Institute of Technology Guwahati, India
+
+				<h1><li><a>Dr. Manoj Sharma</a></li></h1>
+				Rajasthan Ayurveda University, India.
+
+				<h1><li><a>Subbiah Poopathi</a></li> </h1>
+				Guru Ghasidas Vishwavidyalaya, India.
+
+				<h1><li><a>D Balachandar</a></li></h1>
+				Central Drug Research Institute, India.
+
+				<h1><li><a>Subbiah Poopathi</a></li></h1>
+				University of Allahabad, India.
+
+				<h1><li><a>Prof.Alok Nahata</a></li> </h1>
+				 Central University of Punjab India.
+
+				<h1><li><a>Dr. K Satya Rajesh</a></li></h1>
+				Ambedkar National Institute of Technology,India
+
+				<h1><li><a>Santosh S. Jadhav</a></li></h1>
+				Department Physics,Maharaja's College,Ernakulam, Kerala,India.
+
+				<h1><li><a>Prof. Nishchhal Yadav</a></li></h1>
+				Dept. of Physics,D.S.M.?s Arts, Commerce, and Science College,Jintur.
+
+				<h1><li><a>Prof. Narendra Kumar Sharma</a></li></h1>
+				Indian Institute Of Technology, Delhi, India.
+
+				<h1><li><a>Sukhmander Singh</a></li></h1>
+				Defence Institute of Physiology and Allied Science, India
+
+				<h1><li><a>Prof. B.G. Sharma</a></li> </h1>
+				Maulana Azad National Institute of Technology,Bhopal, M. P.(India)
+
+				<h1><li><a>	Dr.Asghar Hussain</a></li> </h1>
+				Govt. Nagarjuna P.G.College of Science, Raipur, C.G .(India
+
+				<h1><li><a>	Prof. C.Nayak</a></li> </h1>
+				Anand Niketan College of Arts,Commerce & Science, ?Anandwan? Warora, Maharashtra, (India).
+
+				<h1><li><a>	Dr. D.Deshpande Pal	</a></li></h1>
+				Fortis Memorial Research Institute, Gurgaon, India.
+
+				<h1><li><a>	Prof. Yogi Dayal Patnaik</a></li></h1>
+				Ruby Hall Clinic, Pune, India
+
+
+	--><font color=red >If you would like to be a part of our Editorial Board then please send us your resume at  <font color="blue"><b><u>IJAPsubmit@gmail.com </u></b></font></font>
+
+
+
+<br/><br/>
+
+
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
+</section>
+<footer>
+<div class="sitePopUp">
+	<button type="button" id="closeSitePopUp"></button>
+	<a href="http://www.internationaljournalisar.org/Journals.html" target="">
+		<div class="sitePopUpInner">
+			<b style="font-size:15px;color:#CB0707;">ISAR- Journals</b><br>
+
+			<center style="margin-top:10px;"><img src="http://www.internationaljournalisar.org/images/paper.gif" width="75%" hieght="50%" /></center>
+<center><img src="http://www.internationaljournalisar.org/images/enter.gif" alt="Click Here" /></center>
+			<!--<b style="font-size:13px;color:#0B0B61;">ISAR -  Journals</b>-->
+		</div>
+	</a>
+</div>
+
+
+
+  <div class="copyright">
+    <p>Copyright &copy;2015 <a href="http://www.internationaljournalisar.org" target="blank"><font size="1"> ISAR - International Scientific And Research Group</font></a>, All rights reserved </p>
+  </div>
+</footer></body>
+</html>
